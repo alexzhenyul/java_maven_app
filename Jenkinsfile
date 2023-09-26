@@ -9,6 +9,7 @@ pipeline {
 			steps {
 				echo "build"
 			}
+        }    
 		stage("test") {
 			when {
 				expression {
@@ -18,6 +19,7 @@ pipeline {
 			steps {
 				echo "test"
 			}
+        }
 		stage("deply") {
 			steps {
 				echo "deploy"
